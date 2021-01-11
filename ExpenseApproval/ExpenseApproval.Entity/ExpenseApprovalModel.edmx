@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="expense_approvalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeId" />
+          </Key>
+          <Property Name="EmployeeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="EmployeeEmail" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="RoleId" Type="int" Nullable="false" />
+          <Property Name="RefreshToken" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="EmployeeBudget">
+          <Key>
+            <PropertyRef Name="EmployeeBudgetId" />
+          </Key>
+          <Property Name="EmployeeBudgetId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="int" Nullable="false" />
+          <Property Name="ExpenseTypeId" Type="int" Nullable="false" />
+          <Property Name="AmountAllotted" Type="decimal" Precision="6" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Expense">
+          <Key>
+            <PropertyRef Name="ExpenseId" />
+          </Key>
+          <Property Name="ExpenseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExpenseCreatorId" Type="int" Nullable="false" />
+          <Property Name="ExpenseDate" Type="date" Nullable="false" />
+          <Property Name="CreationDate" Type="date" Nullable="false" />
+          <Property Name="ApproverId" Type="int" Nullable="false" />
+          <Property Name="ExpenseTypeId" Type="int" Nullable="false" />
+          <Property Name="ExpensePurpose" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="BillImage" Type="image" />
+          <Property Name="ImagePath" Type="varchar" MaxLength="1000" />
+          <Property Name="ModifiedDate" Type="date" />
+        </EntityType>
+        <EntityType Name="ExpenseParticipant">
+          <Key>
+            <PropertyRef Name="ExpenseParticipantId" />
+          </Key>
+          <Property Name="ExpenseParticipantId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="int" Nullable="false" />
+          <Property Name="ExpenseId" Type="int" Nullable="false" />
+          <Property Name="AmountApproved" Type="decimal" Precision="5" Scale="0" />
+          <Property Name="AmountClaimed" Type="decimal" Precision="5" Scale="0" Nullable="false" />
+          <Property Name="ExpenseRemark" Type="varchar" MaxLength="60" />
+          <Property Name="ExpenseStatusId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ExpenseStatus">
+          <Key>
+            <PropertyRef Name="ExpenseStatusId" />
+          </Key>
+          <Property Name="ExpenseStatusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExpenseApproval" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="ExpenseType">
+          <Key>
+            <PropertyRef Name="ExpenseTypeId" />
+          </Key>
+          <Property Name="ExpenseTypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExpenseName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ExpenseAmount" Type="decimal" Precision="6" Scale="0" Nullable="false" />
+          <Property Name="IsIndividual" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoleName" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Employee__RoleId__2D32A501">
+          <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EmployeeB__Emplo__31F75A1E">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeBudget" Type="Self.EmployeeBudget" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeId" />
+            </Principal>
+            <Dependent Role="EmployeeBudget">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EmployeeB__Expen__32EB7E57">
+          <End Role="ExpenseType" Type="Self.ExpenseType" Multiplicity="1" />
+          <End Role="EmployeeBudget" Type="Self.EmployeeBudget" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ExpenseType">
+              <PropertyRef Name="ExpenseTypeId" />
+            </Principal>
+            <Dependent Role="EmployeeBudget">
+              <PropertyRef Name="ExpenseTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Expense__Approve__36BC0F3B">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Expense" Type="Self.Expense" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeId" />
+            </Principal>
+            <Dependent Role="Expense">
+              <PropertyRef Name="ApproverId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Expense__Expense__37B03374">
+          <End Role="ExpenseType" Type="Self.ExpenseType" Multiplicity="1" />
+          <End Role="Expense" Type="Self.Expense" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ExpenseType">
+              <PropertyRef Name="ExpenseTypeId" />
+            </Principal>
+            <Dependent Role="Expense">
+              <PropertyRef Name="ExpenseTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Expense__Modifie__35C7EB02">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Expense" Type="Self.Expense" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeId" />
+            </Principal>
+            <Dependent Role="Expense">
+              <PropertyRef Name="ExpenseCreatorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ExpensePa__Emplo__3D690CCA">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="ExpenseParticipant" Type="Self.ExpenseParticipant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeId" />
+            </Principal>
+            <Dependent Role="ExpenseParticipant">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ExpensePa__Expen__3C74E891">
+          <End Role="Expense" Type="Self.Expense" Multiplicity="1" />
+          <End Role="ExpenseParticipant" Type="Self.ExpenseParticipant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Expense">
+              <PropertyRef Name="ExpenseId" />
+            </Principal>
+            <Dependent Role="ExpenseParticipant">
+              <PropertyRef Name="ExpenseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ExpensePa__Expen__3E5D3103">
+          <End Role="ExpenseStatus" Type="Self.ExpenseStatus" Multiplicity="1" />
+          <End Role="ExpenseParticipant" Type="Self.ExpenseParticipant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ExpenseStatus">
+              <PropertyRef Name="ExpenseStatusId" />
+            </Principal>
+            <Dependent Role="ExpenseParticipant">
+              <PropertyRef Name="ExpenseStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="expense_approvalModelStoreContainer">
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmployeeBudget" EntityType="Self.EmployeeBudget" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Expense" EntityType="Self.Expense" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ExpenseParticipant" EntityType="Self.ExpenseParticipant" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ExpenseStatus" EntityType="Self.ExpenseStatus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ExpenseType" EntityType="Self.ExpenseType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Employee__RoleId__2D32A501" Association="Self.FK__Employee__RoleId__2D32A501">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EmployeeB__Emplo__31F75A1E" Association="Self.FK__EmployeeB__Emplo__31F75A1E">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="EmployeeBudget" EntitySet="EmployeeBudget" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EmployeeB__Expen__32EB7E57" Association="Self.FK__EmployeeB__Expen__32EB7E57">
+            <End Role="ExpenseType" EntitySet="ExpenseType" />
+            <End Role="EmployeeBudget" EntitySet="EmployeeBudget" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Expense__Approve__36BC0F3B" Association="Self.FK__Expense__Approve__36BC0F3B">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Expense" EntitySet="Expense" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Expense__Expense__37B03374" Association="Self.FK__Expense__Expense__37B03374">
+            <End Role="ExpenseType" EntitySet="ExpenseType" />
+            <End Role="Expense" EntitySet="Expense" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Expense__Modifie__35C7EB02" Association="Self.FK__Expense__Modifie__35C7EB02">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Expense" EntitySet="Expense" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ExpensePa__Emplo__3D690CCA" Association="Self.FK__ExpensePa__Emplo__3D690CCA">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="ExpenseParticipant" EntitySet="ExpenseParticipant" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ExpensePa__Expen__3C74E891" Association="Self.FK__ExpensePa__Expen__3C74E891">
+            <End Role="Expense" EntitySet="Expense" />
+            <End Role="ExpenseParticipant" EntitySet="ExpenseParticipant" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ExpensePa__Expen__3E5D3103" Association="Self.FK__ExpensePa__Expen__3E5D3103">
+            <End Role="ExpenseStatus" EntitySet="ExpenseStatus" />
+            <End Role="ExpenseParticipant" EntitySet="ExpenseParticipant" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="expense_approvalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeId" />
+          </Key>
+          <Property Name="EmployeeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EmployeeEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RoleId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Role" Relationship="Self.FK__Employee__RoleId__64B7E415" FromRole="Employee" ToRole="Roles" />
+          <NavigationProperty Name="EmployeeBudgets" Relationship="Self.FK__EmployeeB__Emplo__697C9932" FromRole="Employee" ToRole="EmployeeBudget" />
+          <NavigationProperty Name="Expenses" Relationship="Self.FK__Expense__Approve__6E414E4F" FromRole="Employee" ToRole="Expense" />
+          <NavigationProperty Name="Expenses1" Relationship="Self.FK__Expense__Modifie__6D4D2A16" FromRole="Employee" ToRole="Expense" />
+          <NavigationProperty Name="ExpenseParticipants" Relationship="Self.FK__ExpensePa__Emplo__7306036C" FromRole="Employee" ToRole="ExpenseParticipant" />
+          <Property Name="RefreshToken" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="EmployeeBudget">
+          <Key>
+            <PropertyRef Name="EmployeeBudgetId" />
+          </Key>
+          <Property Name="EmployeeBudgetId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+          <Property Name="ExpenseTypeId" Type="Int32" Nullable="false" />
+          <Property Name="AmountAllotted" Type="Decimal" Precision="6" Scale="0" Nullable="false" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK__EmployeeB__Emplo__697C9932" FromRole="EmployeeBudget" ToRole="Employee" />
+          <NavigationProperty Name="ExpenseType" Relationship="Self.FK__EmployeeB__Expen__6A70BD6B" FromRole="EmployeeBudget" ToRole="ExpenseType" />
+        </EntityType>
+        <EntityType Name="Expense">
+          <Key>
+            <PropertyRef Name="ExpenseId" />
+          </Key>
+          <Property Name="ExpenseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExpenseCreatorId" Type="Int32" Nullable="false" />
+          <Property Name="ExpenseDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ApproverId" Type="Int32" Nullable="false" />
+          <Property Name="ExpenseTypeId" Type="Int32" Nullable="false" />
+          <Property Name="ExpensePurpose" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BillImage" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="ImagePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="ApproverEmployee" Relationship="Self.FK__Expense__Approve__6E414E4F" FromRole="Expense" ToRole="Employee" />
+          <NavigationProperty Name="CreatorEmployee" Relationship="Self.FK__Expense__Modifie__6D4D2A16" FromRole="Expense" ToRole="Employee" />
+          <NavigationProperty Name="ExpenseType" Relationship="Self.FK__Expense__Expense__6F357288" FromRole="Expense" ToRole="ExpenseType" />
+          <NavigationProperty Name="ExpenseParticipants" Relationship="Self.FK__ExpensePa__Expen__7211DF33" FromRole="Expense" ToRole="ExpenseParticipant" />
+        </EntityType>
+        <EntityType Name="ExpenseParticipant">
+          <Key>
+            <PropertyRef Name="ExpenseParticipantId" />
+          </Key>
+          <Property Name="ExpenseParticipantId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+          <Property Name="ExpenseId" Type="Int32" Nullable="false" />
+          <Property Name="AmountApproved" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="AmountClaimed" Type="Decimal" Precision="5" Scale="0" Nullable="false" />
+          <Property Name="ExpenseRemark" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK__ExpensePa__Emplo__7306036C" FromRole="ExpenseParticipant" ToRole="Employee" />
+          <NavigationProperty Name="Expense" Relationship="Self.FK__ExpensePa__Expen__7211DF33" FromRole="ExpenseParticipant" ToRole="Expense" />
+          <Property Name="ExpenseStatusId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="ExpenseStatus" Relationship="expense_approvalModel.FK__ExpensePa__Expen__7E77B618" FromRole="ExpenseParticipant" ToRole="ExpenseStatu" />
+        </EntityType>
+        <EntityType Name="ExpenseType">
+          <Key>
+            <PropertyRef Name="ExpenseTypeId" />
+          </Key>
+          <Property Name="ExpenseTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExpenseName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ExpenseAmount" Type="Decimal" Precision="6" Scale="0" Nullable="false" />
+          <Property Name="IsIndividual" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="EmployeeBudgets" Relationship="Self.FK__EmployeeB__Expen__6A70BD6B" FromRole="ExpenseType" ToRole="EmployeeBudget" />
+          <NavigationProperty Name="Expenses" Relationship="Self.FK__Expense__Expense__6F357288" FromRole="ExpenseType" ToRole="Expense" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Employees" Relationship="Self.FK__Employee__RoleId__64B7E415" FromRole="Roles" ToRole="Employee" />
+        </EntityType>
+        <Association Name="FK__Employee__RoleId__64B7E415">
+          <End Role="Roles" Type="Self.Role" Multiplicity="1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EmployeeB__Emplo__697C9932">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="EmployeeBudget" Type="Self.EmployeeBudget" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeId" />
+            </Principal>
+            <Dependent Role="EmployeeBudget">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Expense__Approve__6E414E4F">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Expense" Type="Self.Expense" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeId" />
+            </Principal>
+            <Dependent Role="Expense">
+              <PropertyRef Name="ApproverId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Expense__Modifie__6D4D2A16">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Expense" Type="Self.Expense" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeId" />
+            </Principal>
+            <Dependent Role="Expense">
+              <PropertyRef Name="ExpenseCreatorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ExpensePa__Emplo__7306036C">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="ExpenseParticipant" Type="Self.ExpenseParticipant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmployeeId" />
+            </Principal>
+            <Dependent Role="ExpenseParticipant">
+              <PropertyRef Name="EmployeeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__EmployeeB__Expen__6A70BD6B">
+          <End Role="ExpenseType" Type="Self.ExpenseType" Multiplicity="1" />
+          <End Role="EmployeeBudget" Type="Self.EmployeeBudget" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ExpenseType">
+              <PropertyRef Name="ExpenseTypeId" />
+            </Principal>
+            <Dependent Role="EmployeeBudget">
+              <PropertyRef Name="ExpenseTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Expense__Expense__6F357288">
+          <End Role="ExpenseType" Type="Self.ExpenseType" Multiplicity="1" />
+          <End Role="Expense" Type="Self.Expense" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ExpenseType">
+              <PropertyRef Name="ExpenseTypeId" />
+            </Principal>
+            <Dependent Role="Expense">
+              <PropertyRef Name="ExpenseTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ExpensePa__Expen__7211DF33">
+          <End Role="Expense" Type="Self.Expense" Multiplicity="1" />
+          <End Role="ExpenseParticipant" Type="Self.ExpenseParticipant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Expense">
+              <PropertyRef Name="ExpenseId" />
+            </Principal>
+            <Dependent Role="ExpenseParticipant">
+              <PropertyRef Name="ExpenseId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ExpenseApprovalContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="EmployeeBudgets" EntityType="Self.EmployeeBudget" />
+          <EntitySet Name="Expenses" EntityType="Self.Expense" />
+          <EntitySet Name="ExpenseParticipants" EntityType="Self.ExpenseParticipant" />
+          <EntitySet Name="ExpenseTypes" EntityType="Self.ExpenseType" />
+          <EntitySet Name="Roles" EntityType="Self.Role" />
+          <AssociationSet Name="FK__Employee__RoleId__64B7E415" Association="Self.FK__Employee__RoleId__64B7E415">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EmployeeB__Emplo__697C9932" Association="Self.FK__EmployeeB__Emplo__697C9932">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="EmployeeBudget" EntitySet="EmployeeBudgets" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Expense__Approve__6E414E4F" Association="Self.FK__Expense__Approve__6E414E4F">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Expense" EntitySet="Expenses" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Expense__Modifie__6D4D2A16" Association="Self.FK__Expense__Modifie__6D4D2A16">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Expense" EntitySet="Expenses" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ExpensePa__Emplo__7306036C" Association="Self.FK__ExpensePa__Emplo__7306036C">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="ExpenseParticipant" EntitySet="ExpenseParticipants" />
+          </AssociationSet>
+          <AssociationSet Name="FK__EmployeeB__Expen__6A70BD6B" Association="Self.FK__EmployeeB__Expen__6A70BD6B">
+            <End Role="ExpenseType" EntitySet="ExpenseTypes" />
+            <End Role="EmployeeBudget" EntitySet="EmployeeBudgets" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Expense__Expense__6F357288" Association="Self.FK__Expense__Expense__6F357288">
+            <End Role="ExpenseType" EntitySet="ExpenseTypes" />
+            <End Role="Expense" EntitySet="Expenses" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ExpensePa__Expen__7211DF33" Association="Self.FK__ExpensePa__Expen__7211DF33">
+            <End Role="Expense" EntitySet="Expenses" />
+            <End Role="ExpenseParticipant" EntitySet="ExpenseParticipants" />
+          </AssociationSet>
+          <EntitySet Name="ExpenseStatus1" EntityType="expense_approvalModel.ExpenseStatus" />
+          <AssociationSet Name="FK__ExpensePa__Expen__7E77B618" Association="expense_approvalModel.FK__ExpensePa__Expen__7E77B618">
+            <End Role="ExpenseStatu" EntitySet="ExpenseStatus1" />
+            <End Role="ExpenseParticipant" EntitySet="ExpenseParticipants" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ExpenseStatus">
+          <Key>
+            <PropertyRef Name="ExpenseStatusId" />
+          </Key>
+          <Property Name="ExpenseStatusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExpenseApproval" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ExpenseParticipants" Relationship="expense_approvalModel.FK__ExpensePa__Expen__7E77B618" FromRole="ExpenseStatu" ToRole="ExpenseParticipant" />
+        </EntityType>
+        <Association Name="FK__ExpensePa__Expen__7E77B618">
+          <End Type="expense_approvalModel.ExpenseStatus" Role="ExpenseStatu" Multiplicity="1" />
+          <End Type="expense_approvalModel.ExpenseParticipant" Role="ExpenseParticipant" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ExpenseStatu">
+              <PropertyRef Name="ExpenseStatusId" />
+            </Principal>
+            <Dependent Role="ExpenseParticipant">
+              <PropertyRef Name="ExpenseStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="expense_approvalModelStoreContainer" CdmEntityContainer="ExpenseApprovalContext">
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="expense_approvalModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="RefreshToken" ColumnName="RefreshToken" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
+                <ScalarProperty Name="EmployeeEmail" ColumnName="EmployeeEmail" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmployeeBudgets">
+            <EntityTypeMapping TypeName="expense_approvalModel.EmployeeBudget">
+              <MappingFragment StoreEntitySet="EmployeeBudget">
+                <ScalarProperty Name="EmployeeBudgetId" ColumnName="EmployeeBudgetId" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="ExpenseTypeId" ColumnName="ExpenseTypeId" />
+                <ScalarProperty Name="AmountAllotted" ColumnName="AmountAllotted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Expenses">
+            <EntityTypeMapping TypeName="expense_approvalModel.Expense">
+              <MappingFragment StoreEntitySet="Expense">
+                <ScalarProperty Name="ExpenseId" ColumnName="ExpenseId" />
+                <ScalarProperty Name="ExpenseCreatorId" ColumnName="ExpenseCreatorId" />
+                <ScalarProperty Name="ExpenseDate" ColumnName="ExpenseDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ApproverId" ColumnName="ApproverId" />
+                <ScalarProperty Name="ExpenseTypeId" ColumnName="ExpenseTypeId" />
+                <ScalarProperty Name="ExpensePurpose" ColumnName="ExpensePurpose" />
+                <ScalarProperty Name="BillImage" ColumnName="BillImage" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExpenseParticipants">
+            <EntityTypeMapping TypeName="expense_approvalModel.ExpenseParticipant">
+              <MappingFragment StoreEntitySet="ExpenseParticipant">
+                <ScalarProperty Name="ExpenseStatusId" ColumnName="ExpenseStatusId" />
+                <ScalarProperty Name="ExpenseParticipantId" ColumnName="ExpenseParticipantId" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="ExpenseId" ColumnName="ExpenseId" />
+                <ScalarProperty Name="AmountApproved" ColumnName="AmountApproved" />
+                <ScalarProperty Name="AmountClaimed" ColumnName="AmountClaimed" />
+                <ScalarProperty Name="ExpenseRemark" ColumnName="ExpenseRemark" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExpenseTypes">
+            <EntityTypeMapping TypeName="expense_approvalModel.ExpenseType">
+              <MappingFragment StoreEntitySet="ExpenseType">
+                <ScalarProperty Name="ExpenseTypeId" ColumnName="ExpenseTypeId" />
+                <ScalarProperty Name="ExpenseName" ColumnName="ExpenseName" />
+                <ScalarProperty Name="ExpenseAmount" ColumnName="ExpenseAmount" />
+                <ScalarProperty Name="IsIndividual" ColumnName="IsIndividual" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="expense_approvalModel.Role">
+              <MappingFragment StoreEntitySet="Roles">
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ExpenseStatus1">
+            <EntityTypeMapping TypeName="expense_approvalModel.ExpenseStatus">
+              <MappingFragment StoreEntitySet="ExpenseStatus">
+                <ScalarProperty Name="ExpenseApproval" ColumnName="ExpenseApproval" />
+                <ScalarProperty Name="ExpenseStatusId" ColumnName="ExpenseStatusId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

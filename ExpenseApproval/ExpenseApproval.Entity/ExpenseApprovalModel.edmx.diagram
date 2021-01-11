@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d865b2e0fce84121a77e855d81e65525" Name="Diagram1">
+        <EntityTypeShape EntityType="expense_approvalModel.Employee" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="expense_approvalModel.EmployeeBudget" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="expense_approvalModel.Expense" Width="1.5" PointX="8.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="expense_approvalModel.ExpenseParticipant" Width="1.5" PointX="10.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="expense_approvalModel.ExpenseType" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="expense_approvalModel.Role" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="expense_approvalModel.FK__Employee__RoleId__64B7E415" ManuallyRouted="false" />
+        <AssociationConnector Association="expense_approvalModel.FK__EmployeeB__Emplo__697C9932" ManuallyRouted="false" />
+        <AssociationConnector Association="expense_approvalModel.FK__Expense__Approve__6E414E4F" ManuallyRouted="false" />
+        <AssociationConnector Association="expense_approvalModel.FK__Expense__Modifie__6D4D2A16" ManuallyRouted="false" />
+        <AssociationConnector Association="expense_approvalModel.FK__ExpensePa__Emplo__7306036C" ManuallyRouted="false" />
+        <AssociationConnector Association="expense_approvalModel.FK__EmployeeB__Expen__6A70BD6B" ManuallyRouted="false" />
+        <AssociationConnector Association="expense_approvalModel.FK__Expense__Expense__6F357288" ManuallyRouted="false" />
+        <AssociationConnector Association="expense_approvalModel.FK__ExpensePa__Expen__7211DF33" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="expense_approvalModel.ExpenseStatus" Width="2.5" PointX="5.375" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="expense_approvalModel.FK__ExpensePa__Expen__7E77B618" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

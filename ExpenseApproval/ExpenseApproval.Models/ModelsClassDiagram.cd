@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ExpenseApproval.Model.EmployeeModel" Collapsed="true">
+    <Position X="23.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>EntityModel\EmployeeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpenseApproval.Model.ExpenseModel" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAARAAAAAgAAAAAAAAAAAAAEAAAAAAgAAQAAAAEA=</HashCode>
+      <FileName>EntityModel\ExpenseModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpenseApproval.Model.ExpenseTypeModel" Collapsed="true">
+    <Position X="21" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAEA=</HashCode>
+      <FileName>EntityModel\ExpenseTypeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpenseApproval.Model.ParticipantModel" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAIAAAAAAAAAAAAAAAAAAAABAAFBIAAQAACAAA=</HashCode>
+      <FileName>EntityModel\ParticipantModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpenseApproval.Model.ApproveExpenseModel" Collapsed="true">
+    <Position X="4" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAFAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ApproveExpenseModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpenseApproval.Model.BudgetDetailsModel" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAECAAAACAAA=</HashCode>
+      <FileName>ViewModel\BudgetDetailsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpenseApproval.Model.BudgetModel" Collapsed="true">
+    <Position X="18.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAgAA=</HashCode>
+      <FileName>ViewModel\BudgetModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpenseApproval.Model.ExpenseDetailsModel" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ABAAAABAAYAAAAACAAACAAAAAAAAAAAAJgAAAAAAAEA=</HashCode>
+      <FileName>ViewModel\ExpenseDetailsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpenseApproval.Model.Expenses" Collapsed="true">
+    <Position X="16.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UBAIAABIAAAAACAAAAAAAAAAAQAABAAFBIAAQAACAAE=</HashCode>
+      <FileName>ViewModel\Expenses.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpenseApproval.Model.ParticipantDetailsModel" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>ViewModel\ParticipantDetailsModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExpenseApproval.Model.ValidateDateRange" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAgAIAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ValidateDateRange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.ComponentModel.DataAnnotations.ValidationAttribute" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,238 @@
+﻿2019-04-17 09:46:23.9456|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/expenses/ ExpenseApproval.Controllers.ExpenseController Amount is not equal to the total AmountClaimed
+2019-04-17 09:46:37.1973|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/expenses/ ExpenseApproval.Controllers.ExpenseController creator is not included into the expense 
+2019-04-17 10:09:05.1824|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/expenses/ ExpenseApproval.Controllers.ExpenseController creator is not included into the expense 
+2019-04-17 10:09:42.5496|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/expenses/ ExpenseApproval.Controllers.ExpenseController User is not an approver 
+2019-04-17 10:09:49.9520|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/expenses/ ExpenseApproval.Controllers.ExpenseController User is not an approver 
+2019-04-17 17:32:06.7848|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/login?token=4%2FLwHa7G343h52FFu2ou_gWL4aOODQQ4vAJjvORGjWgQ9zjbjfQXlMmcfkJuyXE3TpVg-vjg2UqS0eyZwmliIUWbI ExpenseApproval.Api.Controllers.LoginController Error response is null
+2019-04-18 11:33:42.5628|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/expenses/edit/228 ExpenseApproval.Controllers.ExpenseController duplicate employee detected when creating expense 
+2019-04-18 11:34:19.5099|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/expenses/edit/228 ExpenseApproval.Controllers.ExpenseController duplicate employee detected when creating expense 
+2019-04-18 11:36:15.0055|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/expenses/edit/228 ExpenseApproval.Controllers.ExpenseController User is not an approver2019-04-19 12:44:48.7283|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/expenses ExpenseApproval.Controllers.ExpenseController User is not an approver 
+2019-04-19 14:27:32.4019|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/expenses/7 ExpenseApproval.Controllers.ExpenseController This expense is not in pending state 
+2019-04-19 18:39:21.7431|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-20 15:34:04.1258|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-20 15:39:28.0694|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-20 15:40:25.8270|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 09:16:53.3363|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/Login?token=ya29.GlvzBoFNQNW9BfoU6J8HV-_pOaoi862jDKzvFxTWVuPr3F1gCz9fZoG8qPoZCos3Ytzawh6IR5ZPBQkfU2ZpyLbRq-wk8OOatStqE27ptJwBIfBWCRIUh_ZMryj ExpenseApproval.Api.Controllers.LoginController Error response is null
+2019-04-22 16:09:39.8597|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/login?token=ya29.GlzzBuOWiIuwokpnoR-laq3DT9Y2aHKKNnivmDbjAzELCnYUIA-SP5nNg-KrSWQpcLZv1ybbz9XycwT5nJNXJKcBnVV1QyMq_91qeCKir4DwdAyAav7kkTedG6Y4PQ ExpenseApproval.Api.Controllers.LoginController Error response is null
+2019-04-22 17:40:25.5346|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 20:21:42.1436|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 20:23:00.6421|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 20:30:06.5204|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 21:19:52.4412|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/11 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 21:28:05.6574|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/11 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 21:31:56.1416|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/24 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 21:31:59.9088|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/24 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 21:32:12.0735|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/11 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 21:33:34.4352|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/11 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 21:33:35.9083|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/11 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-22 21:38:03.5426|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/11 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-23 08:18:28.8434|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-23 08:19:19.7343|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-23 08:22:58.3918|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-23 08:24:18.4164|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-23 09:11:14.7085|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/login?token=as ExpenseApproval.Api.Controllers.LoginController The remote name could not be resolved: 'www.googleapis.com'
+2019-04-23 09:11:44.5722|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/login?token=ya29.Glv0Bl_ae-EiOKEWtpkWaeP4Xzldm9-zLX16StsfbHAqCs4T1LH962Rp7Kpz1VLcxVQtUlVurqaFzQfzvYKVOav3V-J_Vau1d0zLEJOem6CK2W_7CSt28oXEmabv ExpenseApproval.Api.Controllers.LoginController The remote name could not be resolved: 'www.googleapis.com'
+2019-04-23 10:44:00.7799|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/28 ExpenseApproval.Controllers.ExpenseController Object reference not set to an instance of an object.
+2019-04-23 10:44:41.2812|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/28 ExpenseApproval.Controllers.ExpenseController Object reference not set to an instance of an object.
+2019-04-23 10:44:58.9722|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/28 ExpenseApproval.Controllers.ExpenseController Object reference not set to an instance of an object.
+2019-04-23 11:08:26.6227|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/24 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-23 14:50:32.1539|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/123 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-23 14:51:33.0424|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/123 ExpenseApproval.Controllers.ExpenseController System error.
+2019-04-23 14:55:23.6546|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/123 ExpenseApproval.Controllers.ExpenseController Participant not found
+2019-04-23 14:57:07.3555|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/123 ExpenseApproval.Controllers.ExpenseController Participant not found
+2019-06-04 14:25:47.1012|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/118 ExpenseApproval.Controllers.ExpenseController New transaction is not allowed because there are other threads running in the session.
+2019-06-04 14:28:07.2792|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/118 ExpenseApproval.Controllers.ExpenseController New transaction is not allowed because there are other threads running in the session.
+2019-06-04 14:42:01.2869|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-05 10:10:05.0580|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-05 11:46:56.6714|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/3 ExpenseApproval.Controllers.ExpenseController This expense is not in pending state
+2019-06-10 10:09:37.3609|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/21 ExpenseApproval.Controllers.ExpenseController Only creator can delete a Expesne
+2019-06-10 10:14:20.8331|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/128 ExpenseApproval.Controllers.ExpenseController Only creator can delete a Expesne
+2019-06-10 10:21:24.2393|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/128 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-10 10:23:52.5928|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/128 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-10 10:24:20.4194|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/133 ExpenseApproval.Controllers.ExpenseController Creator is not included in the expense
+2019-06-10 12:33:47.8936|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/133 ExpenseApproval.Controllers.ExpenseController Approved amount is greater than amount claimed
+2019-06-10 13:49:06.7291|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/137 ExpenseApproval.Controllers.ExpenseController Approved amount is greater than amount claimed
+2019-06-10 14:28:24.0039|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/137 ExpenseApproval.Controllers.ExpenseController Approved amount is greater than amount claimed
+2019-06-10 15:20:14.4318|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/138 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-10 15:20:56.3302|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/138 ExpenseApproval.Controllers.ExpenseController Approved amount is greater than amount claimed
+2019-06-10 15:23:03.9865|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/138 ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-10 15:23:17.3193|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/138 ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-10 17:07:33.0601|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-10 19:01:14.2253|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-10 19:01:17.6375|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-10 19:01:18.5775|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-10 19:01:19.8636|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-10 19:01:24.9239|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-11 08:44:00.5189|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController Participant not found
+2019-06-13 10:27:58.3106|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController Participant not found
+2019-06-13 10:28:13.3355|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-13 12:38:22.4661|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController Duplicate employee detected while creating/editing expense
+2019-06-13 14:23:04.0844|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/4 ExpenseApproval.Controllers.ExpenseController Duplicate employee detected while creating/editing expense
+2019-06-13 14:23:18.0932|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/4 ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-13 15:20:42.8813|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/4 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-13 15:21:06.4496|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/4 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-13 15:24:02.6297|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/4 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-13 15:26:06.6048|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/4 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-13 17:57:36.9457|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/6 ExpenseApproval.Controllers.ExpenseController This expense is not in pending state
+2019-06-13 17:58:13.8978|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/6 ExpenseApproval.Controllers.ExpenseController This expense is not in pending state
+2019-06-14 11:28:21.5287|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/1 ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-14 11:28:46.3461|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/1 ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-14 11:31:49.4705|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/1 ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-14 11:36:11.9076|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/1 ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-14 11:36:23.6322|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/6 ExpenseApproval.Controllers.ExpenseController This expense is not in pending state
+2019-06-14 18:38:49.6239|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-14 18:39:32.0454|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid Expense Category
+2019-06-14 18:40:59.6284|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid employee found when creating expense
+2019-06-14 19:05:45.5454|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-14 19:08:42.3985|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-17 09:54:05.9680|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Please choose a dffrent approvar. you can't make yourself an approver
+2019-06-17 10:13:15.1372|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-17 10:13:38.0216|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-17 10:13:49.3342|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid Expense Category
+2019-06-17 10:27:23.7648|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid employee found when creating/Editing expense
+2019-06-17 10:33:45.1936|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid employee found when creating/Editing expense
+2019-06-17 10:34:33.3163|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid employee found when creating/Editing expense
+2019-06-17 11:39:29.7704|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/17 ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-17 11:43:05.6916|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/17 ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-17 11:46:13.4104|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/17 ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-17 11:50:51.0513|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/17 ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-17 11:53:49.9165|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/17 ExpenseApproval.Controllers.ExpenseController Duplicate employee detected while creating/editing expense
+2019-06-17 11:55:00.7076|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/17 ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-17 11:56:03.0152|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/17 ExpenseApproval.Controllers.ExpenseController Please choose a dffrent approvar. you can't make yourself an approver
+2019-06-17 12:26:32.8035|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid employee found when creating/Editing expense
+2019-06-17 12:27:08.7795|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid employee found when creating/Editing expense
+2019-06-17 12:34:01.8444|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController Please choose a dffrent approvar. you can't make yourself an approver
+2019-06-17 12:34:14.4901|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/2 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-17 12:35:00.5547|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/2 ExpenseApproval.Controllers.ExpenseController Only creator can delete an Expesne
+2019-06-17 12:41:58.7744|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/100 ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-17 12:44:47.0910|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/2 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-17 12:45:59.2831|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/2 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-17 12:52:27.1898|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/26 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-17 12:53:08.3612|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/7 ExpenseApproval.Controllers.ExpenseController Approved amount is greater than amount claimed
+2019-06-17 12:59:06.4333|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/2 ExpenseApproval.Controllers.ExpenseController Only creator can delete/Edit an Expesne
+2019-06-17 12:59:20.8929|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/2 ExpenseApproval.Controllers.ExpenseController This expense is not in pending state
+2019-06-17 13:01:41.3467|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/2 ExpenseApproval.Controllers.ExpenseController This expense is not in pending state
+2019-06-17 13:03:10.2126|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid Expense Category
+2019-06-17 13:03:22.8563|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid employee found when creating/Editing expense
+2019-06-17 13:04:27.5476|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Please choose a dffrent approvar. you can't make yourself an approver
+2019-06-17 16:06:23.4017|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/17 ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-17 17:58:10.1665|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/17 ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-18 10:11:08.9521|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/23 ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-18 11:04:18.4426|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/23 ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-18 14:41:03.4654|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Please choose a dffrent approvar. you can't make yourself an approver
+2019-06-18 15:06:25.7785|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/23 ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-18 15:47:04.4650|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/25 ExpenseApproval.Controllers.ExpenseController Please add participants in Expense
+2019-06-18 15:47:18.5308|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit/25 ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-18 15:57:05.1283|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/53 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-18 15:57:32.4869|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/55 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-18 15:57:34.3670|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/55 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-18 15:58:22.1387|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/46 ExpenseApproval.Controllers.ExpenseController Approved amount is greater than amount claimed
+2019-06-18 16:04:52.9251|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/edit ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-18 16:29:52.3136|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Please choose a dffrent approvar. you can't make yourself an approver
+2019-06-19 09:38:45.1779|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/26 ExpenseApproval.Controllers.ExpenseController Only creator can delete/Edit an Expesne
+2019-06-19 09:38:56.4217|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/26 ExpenseApproval.Controllers.ExpenseController Only creator can delete/Edit an Expesne
+2019-06-19 09:39:19.3029|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/26 ExpenseApproval.Controllers.ExpenseController Only creator can delete/Edit an Expesne
+2019-06-19 09:39:20.0379|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/26 ExpenseApproval.Controllers.ExpenseController Only creator can delete/Edit an Expesne
+2019-06-19 09:39:20.4986|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/26 ExpenseApproval.Controllers.ExpenseController Only creator can delete/Edit an Expesne
+2019-06-19 12:39:39.1565|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/login?googleToken=thythth ExpenseApproval.Api.Controllers.LoginController Error response is null
+2019-06-21 11:06:25.0134|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/8 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-21 12:23:31.8940|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-21 13:51:09.3636|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/5 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-21 13:51:35.0648|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/5 ExpenseApproval.Controllers.ExpenseController This expense is not in pending state
+2019-06-21 13:52:41.6758|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/5 ExpenseApproval.Controllers.ExpenseController This expense is not in pending state
+2019-06-21 14:40:25.0496|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=false ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-21 14:46:41.7248|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Please choose a dffrent approvar. you can't make yourself an approver
+2019-06-21 15:04:04.8959|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/5 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-21 15:04:09.6831|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/6 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-21 15:05:02.9892|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/5 ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-21 15:06:39.5427|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Please choose a dffrent approvar. you can't make yourself an approver
+2019-06-21 15:06:56.9027|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Only creator can delete/Edit an Expesne
+2019-06-21 15:09:32.4386|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController This expense is not in pending state
+2019-06-21 15:11:09.4882|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-21 15:15:19.2634|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-21 16:11:26.6897|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-21 16:56:11.3522|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-21 17:19:29.7395|ERROR|ExpenseApproval.Logging.NLogger|PUT http://localhost:59037/api/expenses/approve/5 ExpenseApproval.Controllers.ExpenseController This expense is not in pending state
+2019-06-21 17:20:48.0480|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/3 ExpenseApproval.Controllers.ExpenseController Only creator can delete/Edit an Expesne
+2019-06-21 17:22:20.7037|ERROR|ExpenseApproval.Logging.NLogger|DELETE http://localhost:59037/api/expenses/3 ExpenseApproval.Controllers.ExpenseController This expense is not in pending state
+2019-06-25 11:45:12.2415|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-25 11:46:19.1705|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-25 11:46:42.5590|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-25 11:48:04.9531|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-25 11:48:34.6493|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-25 11:50:11.7312|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-25 11:50:19.1985|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-25 11:53:45.9214|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Please add participants in Expense
+2019-06-25 11:54:15.4746|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-25 11:54:23.7153|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid Expense Category
+2019-06-25 11:54:36.1432|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-25 11:54:57.4414|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-25 11:55:07.1129|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-25 11:55:26.6406|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-25 11:55:40.7564|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-25 12:30:52.3475|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Expense Date can not be blank or future or 1 year past
+2019-06-25 12:31:05.8743|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Expense Date can not be blank or future or 1 year past
+2019-06-25 12:38:56.5092|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Expense Date can not be blank or of future or 1 year old
+2019-06-25 12:39:21.4914|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Expense Date can not be blank or of future or 1 year old
+2019-06-25 12:40:04.2167|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-25 12:40:29.0048|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid Expense Category
+2019-06-25 12:40:42.1076|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-25 12:41:18.6140|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController You cannot add participant in individual type expense
+2019-06-26 10:34:57.9198|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Expense Date can not be blank or of future or 1 year old
+2019-06-26 11:00:03.1643|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-26 11:18:39.0547|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-26 11:19:38.8203|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-26 11:20:14.5744|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-26 11:20:45.7274|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-26 11:20:57.6682|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-26 11:21:34.0230|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Unable to load the specified metadata resource.
+2019-06-26 12:45:58.6327|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Expense Date can not be blank or of future or 1 year old
+2019-06-26 14:48:03.3395|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Invalid Expense Category
+2019-06-26 14:49:07.7590|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-26 14:49:56.0027|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses/ ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
+2019-06-27 13:59:41.2521|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:00:08.7209|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:00:10.3389|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:00:11.0499|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:00:11.6665|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:00:12.2675|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:00:12.7945|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:02:43.3622|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:03:01.4127|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:04:07.6095|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:04:34.4815|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:04:52.4545|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:05:19.3095|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:06:19.1127|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:08:49.1464|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 14:11:23.7631|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 16:30:04.1473|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 16:35:02.6331|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 16:41:29.0860|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 16:45:52.9462|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 16:45:52.9462|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 16:45:53.7867|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 16:46:41.0652|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 16:46:41.0694|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 16:46:57.4656|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 16:47:02.6814|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 16:47:02.8493|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 16:47:07.9589|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 16:47:38.0693|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses/billImage?fileName=1320610620308673657kvketR-ernobyl-wallpaper.jpg ExpenseApproval.Controllers.ExpenseController Could not find file 'C:\Users\nikhil.yadav\Desktop\down\1320610620308673657kvketR-ernobyl-wallpaper.jpg'.
+2019-06-27 17:41:09.1364|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid Expense Category
+2019-06-27 17:41:19.1965|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Amount must be a numeric value
+2019-06-27 17:41:30.3082|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-27 17:41:38.0990|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-27 17:43:40.0302|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-27 17:44:45.2180|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-27 17:45:07.7351|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-27 17:45:14.2969|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-27 17:46:03.4653|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-27 17:47:11.0623|ERROR|ExpenseApproval.Logging.NLogger|GET http://localhost:59037/api/expenses?forApproval=true ExpenseApproval.Controllers.ExpenseController No Record Found
+2019-06-27 17:47:49.3930|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-27 17:49:12.0308|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-27 17:58:57.3293|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Unauthorized access
+2019-06-27 18:01:51.4067|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Not an authorized approver
+2019-06-27 18:02:10.9597|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Not an authorized approver
+2019-06-27 18:02:37.2042|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Invalid employee found when creating/Editing expense
+2019-06-27 18:02:50.9857|ERROR|ExpenseApproval.Logging.NLogger|POST http://localhost:59037/api/expenses ExpenseApproval.Controllers.ExpenseController Amount is not equal to total amount claimed
